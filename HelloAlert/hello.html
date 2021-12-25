@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>hello, title</title>
+    <script src="helloscripts.js"></script>
+
+</head>
+<body>
+    <!-- form will call greet() function once form is submited (i.e. submit name button is clicked)  -->
+    <!-- return false is used so that the form does not get submitted anywhere (server). This is because we are client side and not using a server side (server-side)  -->
+    <form onsubmit="greet(); return false;">
+        <input id="name" autocomplete="off" autofocus type="text" placeholder="Enter name">       
+        <input type="submit"value="Submit name" >
+    </form>
+</body>
+</html>
